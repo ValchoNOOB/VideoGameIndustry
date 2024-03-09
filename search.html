@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Smooch&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Search</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu">
+        <button class="navbutton"><a href="index.html">Начало</a></button>
+        <button class="navbutton"><a href="search.html">Търсене</a></button>
+        <div class="dropdown">
+            <button class="navbutton">Видове игри</button>
+            <div class="dropdown-content">
+            <a href="Roguelike.html">Roguelike</a>
+            <a href="fps.html">Fps (first person shooter)</a> <!-- CsGo, Tf2, Rainbow6Seage, Ultrakill, Valorant-->
+            <a href="action.html">Action</a> <!-- Rust, Resident evil, Elden ring, Dark souls, Outlast -->
+            <a href="towerdefence.html">Tower Defense</a> <!-- Btd6, btd battles, pvz, Irule, Kingdom Rush -->
+            <a href="card and board.html">Card and Board</a> <!-- YuGiOh Duel links, YuGiOh Master Duel, Mtg arena, Uno, Monopoly -->
+            <a href="other.html">Others</a> <!-- League, Diablo, Osu, Faith, Wow -->
+            </div>
+          </div>
+        <button class="navbutton"><a href="about.html">Информация</a></button>  
+    </div>
+</div>
+</div>
+<div class="searchmenu">
+    <div class="game-search">
+        <label for="games">Избери игра:</label>
+        <select id="games" name="games">
+          <option value="">Избери игра</option>
+          <option value="league">League of legends</option>
+          <option value="tboi">The Binding of Isaac</option>
+          <option value="terraria">Terraria</option>
+          <option value="ultrakill">Ultrakill</option>
+          <option value="halflife">Half-life</option>
+          <option value="chess">5D chess</option>
+          <option value="brotato">Brotato</option>
+          <option value="btd6">Bloons TD 6</option>
+          <option value="btdbattles">Bloons TD Battles</option>
+          <option value="csgo">Cs:Go</option>
+          <option value="darksouls">Dark Souls</option>
+          <option value="eldenring">Elden Ring</option>
+          <option value="deadcells">Dead Cells</option>
+          <option value="diablo">Diablo 2</option>
+          <option value="duellinks">Yu-Gi-Oh! Duel Links</option>
+          <option value="masterduel">Yu-Gi-Oh! Master Duel</option>
+          <option value="faith">Faith: The unholy Trinity</option>
+          <option value="gundeon">Enter the Gundeon</option>
+          <option value="hades">Hades</option>
+          <option value="kingdomrush">Kingdom Rush</option>
+          <option value="mtg">Magic the Gathering Arena</option>
+          <option value="osu">Osu!</option>
+          <option value="outlast">Outlast</option>
+          <option value="pvz">Plants vs Zombies</option>
+          <option value="r6s">Rainbow Six Siege</option>
+          <option value="riskofrain">Risk of Rain 2</option>
+          <option value="rogue">Rogue</option>
+          <option value="rust">Rust</option>
+          <option value="spelunky">Spelunky</option>
+          <option value="tf2">Team Fortress 2</option>
+          <option value="uno">Uno</option>
+          <option value="valorant">Valorant</option>
+          <option value="vampiresurvivors">Vampire Survivors</option>
+          <option value="wow">World of Warcraft</option>
+
+        </select>
+        <button class="Search" onclick="searchGame()">Search</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+      function searchGame() {
+        const selectedGame = document.getElementById('games').value;
+        if (selectedGame=="league") {
+          window.open("https://en.wikipedia.org/wiki/League_of_Legends");
+        }else if (selectedGame=="tboi") {
+          window.open("https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)");
+        }else if (selectedGame=="terraria") {
+          window.open("https://en.wikipedia.org/wiki/Terraria");
+        }else if (selectedGame=="ultrakill") {
+          window.open("https://en.wikipedia.org/wiki/Ultrakill");
+        }else if (selectedGame=="halflife") {
+          window.open("https://en.wikipedia.org/wiki/Half-Life_(video_game)");
+        }else if (selectedGame=="chess") {
+          window.open("https://en.wikipedia.org/wiki/5D_Chess_with_Multiverse_Time_Travel");
+        }else if (selectedGame=="brotato") {
+          window.open("https://en.wikipedia.org/wiki/Brotato");
+        }else if (selectedGame=="btd6") {
+          window.open("https://en.wikipedia.org/wiki/Bloons_TD_6");
+        }else if (selectedGame=="btdbattles") {
+          window.open("https://en.wikipedia.org/wiki/Bloons_Tower_Defense#Bloons_TD_Battles_2");
+        }else if (selectedGame=="csgo") {
+          window.open("https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive");
+        }else if (selectedGame=="darksouls") {
+          window.open("https://en.wikipedia.org/wiki/Dark_Souls");
+        }else if (selectedGame=="eldenring") {
+          window.open("https://en.wikipedia.org/wiki/Elden_Ring");
+        }else if (selectedGame=="deadcells") {
+          window.open("https://en.wikipedia.org/wiki/Dead_Cells");
+        }else if (selectedGame=="diablo") {
+          window.open("https://en.wikipedia.org/wiki/Diablo_II");
+        }else if (selectedGame=="duellinks") {
+          window.open("https://en.wikipedia.org/wiki/Yu-Gi-Oh!_Duel_Links");
+        }else if (selectedGame=="masterduel") {
+          window.open("https://en.wikipedia.org/wiki/Yu-Gi-Oh!_Master_Duel");
+        }else if (selectedGame=="faith") {
+          window.open("https://en.wikipedia.org/wiki/Faith:_The_Unholy_Trinity");
+        }else if (selectedGame=="gundeon") {
+          window.open("https://en.wikipedia.org/wiki/Enter_the_Gungeon");
+        }else if (selectedGame=="hades") {
+          window.open("https://en.wikipedia.org/wiki/Hades_(video_game)");
+        }else if (selectedGame=="kingdomrush") {
+          window.open("https://en.wikipedia.org/wiki/Kingdom_Rush");
+        }else if (selectedGame=="mtg") {
+          window.open("https://en.wikipedia.org/wiki/Magic:_The_Gathering_Arena");
+        }else if (selectedGame=="osu") {
+          window.open("https://en.wikipedia.org/wiki/Osu!");
+        }else if (selectedGame=="outlast") {
+          window.open("https://en.wikipedia.org/wiki/Outlast");
+        }else if (selectedGame=="pvz") {
+          window.open("https://en.wikipedia.org/wiki/Plants_vs._Zombies_(video_game)");
+        }else if (selectedGame=="r6s") {
+          window.open("https://en.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege");
+        }else if (selectedGame=="riskofrain") {
+          window.open("https://en.wikipedia.org/wiki/Risk_of_Rain");
+        }else if (selectedGame=="rogue") {
+          window.open("https://en.wikipedia.org/wiki/Rogue_(video_game)");
+        }else if (selectedGame=="rust") {
+          window.open("https://en.wikipedia.org/wiki/Rust_(video_game)");
+        }else if (selectedGame=="spelunky") {
+          window.open("https://en.wikipedia.org/wiki/Spelunky");
+        }else if (selectedGame=="tf2") {
+          window.open("https://en.wikipedia.org/wiki/Team_Fortress_2");
+        }else if (selectedGame=="uno") {
+          window.open("https://en.wikipedia.org/wiki/Uno_(video_game)");
+        }else if (selectedGame=="valorant") {
+          window.open("https://en.wikipedia.org/wiki/Ultrakill");
+        }else if (selectedGame=="vampiresurvivors") {
+          window.open("https://en.wikipedia.org/wiki/Vampire_Survivors");
+        } else {
+          alert('Choose a game first!');
+        }
+      }
+    </script>
+</body>
+</html>
+

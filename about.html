@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Smooch&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Categories.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <button class="navbutton"><a href="index.html">Начало</a></button>
+            <button class="navbutton"><a href="search.html">Търсене</a></button>
+            <div class="dropdown">
+                <button class="navbutton">Видове игри</button>
+                <div class="dropdown-content">
+                <a href="Roguelike.html">Roguelike</a>
+                <a href="fps.html">Fps (first person shooter)</a> <!-- CsGo, Tf2, Rainbow6Seage, Ultrakill, Valorant-->
+                <a href="action.html">Action</a> <!-- Rust, Resident evil, Elden ring, Dark souls, Outlast -->
+                <a href="towerdefence.html">Tower Defense</a> <!-- Btd6, btd battles, pvz, Irule, Kingdom Rush -->
+                <a href="card and board.html">Card and Board</a> <!-- YuGiOh Duel links, YuGiOh Master Duel, Mtg arena, Uno, Monopoly -->
+                <a href="other.html">Others</a> <!-- League, Diablo, Osu, Faith, Wow -->
+                </div>
+              </div>
+            <button class="navbutton"><a href="about.html">Информация</a></button>  
+        </div>
+    </div>
+    <h1>Създадено от Георги Металиков(ValchoNOOB). Помощ от Asteuchiha и petsensmurf.</h1><br>
+    <h1 id="feedback">Моля изпратете обратна връзка</h1>
+<script>
+    var headingElement = document.getElementById("feedback")
+    alert(headingElement.innerHTML);
+    prompt("Моля изпратете обратна връзка: ")
+    headingElement.innerHTML = "Благодаря за обратната връзка!";
+
+</script>
+
+</body>
